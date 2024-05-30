@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- fontawsome cnd -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery function-------------------------------------------------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--  // wow js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <style>
+      .visibility-hidden {
+        visibility: hidden;
+      }
+      .visibility-visible {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body class="pt-[54px]">
+    <div
+      class="bg-[#262626] h-[54px] fixed top-0 w-full z-50 flex justify-between px-5"
+    >
+      <div class="w-[152px] pt-[17px]">
+        <img
+          src="/images/envato_market-dde916a48af7413e54aa058fe7ae6856752fca799da4bec355f00aea904bfa19.png"
+          alt=""
+        />
+      </div>
+      <a
+        class="text-sm font-poppins bg-[#7AA93C] text-white w-24 h-8 mt-3 flex justify-center items-center rounded-sm"
+        href=""
+        >Buy now</a
+      >
+    </div>
+
+    <nav
+      class="navbar fixed top-[54px] w-full z-20 bg-white navbar opacity-0 visibility-hidden shadow-[0_0_20px_-10px_rgba(0,0,0,0.8)]"
+    >
+      <ul
+        class="flex justify-center gap-[42px] font-jost font-medium text-sm h-[72px] items-center"
+      >
+        <li>
+          <a class="text-[#6722B5]" href="">START TOUR </a>
+        </li>
+        <li>
+          <a href=""> DEMOS </a>
+        </li>
+        <li>
+          <a href=""> FEATURES </a>
+        </li>
+        <li>
+          <a href=""> ONLINE DOCUMENTATION </a>
+        </li>
+        <li>
+          <a
+            class="bg-[#6722B5] flex gap-3 text-white py-2 rounded-lg px-5 items-center"
+            href=""
+            ><span class="text-xl"><i class="fa-solid fa-feather"></i></span>
+            PURCHASE NOW</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- parallex-banner -->
+    <div
+      class="bg-[url('/images/banner.jpg')] bg-center bg-cover h-screen w-full parallax-container relative"
+    >
+      <div class="">
+        <div class="flex justify-[inherit] gap-[55%] pt-[8%] overflow-hidden">
+          <img
+            class="parallax-image duration-100 ease-in-out relative right-[18px]"
+            src="/images/bnr-ly1.png"
+            alt=""
+          />
+          <img
+            class="parallax-imageOne duration-100 ease-in-out"
+            src="/images/bnr-ly2.png"
+            alt=""
+          />
+        </div>
+        <div class="flex justify-between pt-[10%] px-[7%]">
+          <img
+            class="parallax-imageTwo duration-100 ease-in-out"
+            src="/images/bnr-ly3.png"
+            alt=""
+          />
+          <img
+            class="parallax-imageThree duration-100 ease-in-out"
+            src="/images/bnr-ly4.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="flex justify-center items-center flex-col text-center">
+        <div class="absolute top-0 w-[54%] pt-[72px]">
+          <img class="mx-auto pb-6" src="/images/logo-light.png" alt="" />
+
+          <h1
+            class="leading-[69px] font-jost text-[50px] text-white font-bold tracking-[3px]"
+          >
+            Creative Agency
+          </h1>
+          <h1
+            class="font-jost text-[40px] text-white font-bold tracking-[3px] mb-[34px]"
+          >
+            WordPress Theme
+          </h1>
+          <a
+            class="bg-[#6722B5] text-white py-4 rounded-lg px-[30px] font-poppins text-[15px] font-medium"
+            href=""
+          >
+            <i class="fa-solid fa-feather text-xl pr-2"></i>
+            PURCHASE NOW</a
+          >
+          <img class="pl-[52%]" src="/images/arrow.png" alt="" />
+          <p
+            class="text-xl font-bold text-[#FF7425] relative top-[-74px] left-[200px]"
+          >
+            $59 Only
+          </p>
+          <img src="/images/device.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#6722B5] px-28 pt-[220px] pb-[110px]">
+      <div class="flex flex-col items-center">
+        <p
+          class="rounded-3xl font-poppins text-xs font-medium tracking-[3px] py-2 px-5 text-[#6722B5] bg-white mb-4"
+        >
+          WHY BUY SWIPY?
+        </p>
+        <h1
+          class="font-jost text-white text-[40px] font-semibold w-[55%] text-center leading-[50px] pb-[70px]"
+        >
+          21000+ Customers Using Our Products
+        </h1>
+      </div>
+      <div class="grid grid-cols-4 gap-[30px] justify-items-center">
+        <div class="">
+          <img src="/images/1.png" alt="" />
+          <div class="bg-white text-center rounded-bl-lg">
+            <div class="pt-7 px-[33px] pb-5">
+              <h1
+                class="font-jost text-[22px] text-[#19082D] font-semibold pb-2"
+              >
+                Elementor Page Builder
+              </h1>
+              <p class="font-poppins text-[#454F6C] leading-7">
+                We used #1 drag and drop page builder as Elementor page builder.
+              </p>
+            </div>
+            <div class="flex justify-end">
+              <div class="w-[60px] h-[30px] bg-[#FF7425]"></div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img src="/images/1.png" alt="" />
+          <div class="bg-white text-center rounded-bl-lg">
+            <div class="pt-7 px-[33px] pb-5">
+              <h1
+                class="font-jost text-[22px] text-[#19082D] font-semibold pb-2"
+              >
+                Elementor Page Builder
+              </h1>
+              <p class="font-poppins text-[#454F6C] leading-7">
+                We used #1 drag and drop page builder as Elementor page builder.
+              </p>
+            </div>
+            <div class="flex justify-end">
+              <div class="w-[60px] h-[30px] bg-[#FF7425]"></div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img src="/images/1.png" alt="" />
+          <div class="bg-white text-center rounded-bl-lg">
+            <div class="pt-7 px-[33px] pb-5">
+              <h1
+                class="font-jost text-[22px] text-[#19082D] font-semibold pb-2"
+              >
+                Elementor Page Builder
+              </h1>
+              <p class="font-poppins text-[#454F6C] leading-7">
+                We used #1 drag and drop page builder as Elementor page builder.
+              </p>
+            </div>
+            <div class="flex justify-end">
+              <div class="w-[60px] h-[30px] bg-[#FF7425]"></div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img src="/images/1.png" alt="" />
+          <div class="bg-white text-center rounded-bl-lg">
+            <div class="pt-7 px-[33px] pb-5">
+              <h1
+                class="font-jost text-[22px] text-[#19082D] font-semibold pb-2"
+              >
+                Elementor Page Builder
+              </h1>
+              <p class="font-poppins text-[#454F6C] leading-7">
+                We used #1 drag and drop page builder as Elementor page builder.
+              </p>
+            </div>
+            <div class="flex justify-end">
+              <div class="w-[60px] h-[30px] bg-[#FF7425]"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <img src="/images/1.png" alt="" />
+          <div class="bg-white text-center rounded-bl-lg">
+            <div class="pt-7 px-[33px] pb-5">
+              <h1
+                class="font-jost text-[22px] text-[#19082D] font-semibold pb-2"
+              >
+                Elementor Page Builder
+              </h1>
+              <p class="font-poppins text-[#454F6C] leading-7">
+                We used #1 drag and drop page builder as Elementor page builder.
+              </p>
+            </div>
+            <div class="flex justify-end">
+              <div class="w-[60px] h-[30px] bg-[#FF7425]"></div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img src="/images/1.png" alt="" />
+          <div class="bg-white text-center rounded-bl-lg">
+            <div class="pt-7 px-[33px] pb-5">
+              <h1
+                class="font-jost text-[22px] text-[#19082D] font-semibold pb-2"
+              >
+                Elementor Page Builder
+              </h1>
+              <p class="font-poppins text-[#454F6C] leading-7">
+                We used #1 drag and drop page builder as Elementor page builder.
+              </p>
+            </div>
+            <div class="flex justify-end">
+              <div class="w-[60px] h-[30px] bg-[#FF7425]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pt-[90px] px-[100px] pb-[100px] flex flex-col items-center">
+      <p
+        class="rounded-3xl font-poppins text-xs font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
+      >
+        DEMO HOME PAGES
+      </p>
+      <h1
+        class="font-jost text-[40px] w-[47%] pb-16 text-center leading-[50px] font-semibold text-[#19082D]"
+      >
+        <span class="text-[#6722B5]">15</span> Unique Demo Home Pages With
+        Awesome Layouts
+      </h1>
+      <!-- wow js animation -->
+      <div class="grid grid-cols-3 gap-[50px] ">
+        <div class="wow fadeInUp">
+          <img src="/images/home1.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Digital Agency
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home2.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Personal Portfolio
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home3.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Branding Agency
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home4.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Creative Agency
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home5.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Corporate Agency
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home6.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Minimal Agency
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home7.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Creative Agency 2
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home8.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Creative Agency 3
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home9.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Creative Agency 4
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home10.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Creative Agency 5
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home11.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Creative Agency 6
+          </p>
+        </div>
+
+        <div class="">
+          <img src="/images/home12.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Creative Portfolio
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home13.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Branding
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home14.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Minimal Portfolio
+          </p>
+        </div>
+        <div class="">
+          <img src="/images/home15.jpg" alt="" />
+          <p
+            class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
+          >
+            Branding 2
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="px-[234px] h-[302px] bg-[url(/images/bg1.jpg)] bg-center bg-cover font-jost"
+    >
+      <div class="grid grid-cols-4 gap-[168px] py-[110px]">
+        <div class="flex flex-col items-center">
+          <div class="flex pb-3">
+            <div class="count text-6xl font-bold text-[#FF7425]">15</div>
+          </div>
+          <p
+            class="counter-pera2 text-[18px] font-semibold text-white w-[114%]"
+          >
+            Demo Homepages
+          </p>
+        </div>
+
+        <div>
+          <div class="flex pb-3">
+            <div class="count text-6xl font-bold text-[#FF7425]">70</div>
+            <p class="counter-pera text-6xl font-bold text-[#FF7425]">+</p>
+          </div>
+          <p class="counter-pera2 text-[18px] font-semibold text-white">
+            Total Pages
+          </p>
+        </div>
+
+        <div>
+          <div class="flex pb-3">
+            <div class="count text-6xl font-bold text-[#FF7425]">0</div>
+            <div id="counter" class="count text-6xl font-bold text-[#FF7425]">
+              7
+            </div>
+          </div>
+          <p class="counter-pera2 text-[18px] font-semibold text-white">
+            Header Style
+          </p>
+        </div>
+
+        <div>
+          <div class="flex pb-3">
+            <div class="count text-6xl font-bold text-[#FF7425]">96</div>
+            <p class="counter-pera text-6xl font-bold text-[#FF7425]">+</p>
+          </div>
+          <p class="counter-pera2 text-[18px] font-semibold text-white">
+            Custom Addons
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="w-1/2 bg-white h-full">
+        <img
+          class="w-full h-full relative left-[23%] top-[100px]"
+          src="/images/elementor.png"
+          alt=""
+        />
+      </div>
+      <div class="w-1/2 bg-[#F7F9FA] py-[190px] pl-[192px] text-left">
+        <p
+          class="rounded-3xl font-poppins text-xs w-[157px] font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
+        >
+          PAGE BUILDER
+        </p>
+        <h1
+          class="font-jost text-[40px] w-[55%] pb-[25px] leading-[50px] font-semibold text-[#19082D]"
+        >
+          Elementor Page Builder
+        </h1>
+        <p class="font-poppins text-[16px] text-[#6A6B6B] w-3/4 leading-7">
+          We used #1 free WordPress website builder(Drag & Drop) - Elementor as
+          page builder. This page builder is Simple. Powerful. Flexible.
+          Experience the power of 100% visual design and build websites that
+          load faster, and speed up the process of building them.
+        </p>
+      </div>
+    </div>
+    <div
+      class="bg-[url('/images/bg2.jpg')] flex flex-col items-center pt-[92px] px-[174px] pb-[100px]"
+    >
+      <p
+        class="rounded-3xl font-poppins text-xs w-[157px] font-medium tracking-[3px] py-2 px-5 text-[#6722B5] bg-white mb-5"
+      >
+        PAGE BUILDER
+      </p>
+      <h1
+        class="font-jost text-[40px] w-1/2 text-center pb-[25px] leading-[50px] font-semibold text-white"
+      >
+        Testimonials From Real Customers
+      </h1>
+      <div class="grid grid-cols-3 gap-[30px]">
+        <div class="bg-[#5C1EA3] py-[50px] px-8 rounded-lg">
+          <p
+            class="font-poppins text-[16px] italic text-[#FFFFFF] leading-7 pb-6"
+          >
+            I looked for a wordpress theme for weeks - none of them had what I
+            was looking for except Reobiz! So many options and very nice design
+            and layout. Support is fast and available!!!! Great Product.
+          </p>
+          <p class="font-jost text-white font-semibold text-[18px] pb-5">
+            OnlyGains2021
+          </p>
+          <div class="flex text-[#FFFF00] pb-6 gap-2">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="bg-[#5C1EA3] py-[50px] px-8 rounded-lg">
+          <p
+            class="font-poppins text-[16px] italic text-[#FFFFFF] leading-7 pb-6"
+          >
+            Great theme, and overall, amazing support. The theme is very
+            flexible and easy to install and use, but if you will need
+            support... you found the right team: super fast and supportive.
+            Amazing!
+          </p>
+          <p class="font-jost text-white font-semibold text-[18px] pb-5">
+            fabrizioDot
+          </p>
+          <div class="flex text-[#FFFF00] pb-6 gap-2">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="bg-[#5C1EA3] pt-[50px] px-8 rounded-lg">
+          <p
+            class="font-poppins text-[16px] italic text-[#FFFFFF] leading-7 pb-6 w-[102%]"
+          >
+            This is a theme loaded with assets where the author himself (so it
+            seems) helps you with issues... the answers are directly in your
+            mail, no logging in, no tickets, no 24 hours of waiting, no passing
+            through irritating pages where they try to sell you other stuff.
+          </p>
+          <p class="font-jost text-white font-semibold text-[18px] pb-5">
+            Dienbos
+          </p>
+          <div class="flex text-[#FFFF00] pb-6 gap-2">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="w-1/2 bg-[#F7F9FA] py-[185px] pl-40 text-left">
+        <p
+          class="rounded-3xl font-poppins text-xs w-[157px] font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
+        >
+          E-COMMERCE
+        </p>
+        <h1
+          class="font-jost text-[40px] w-[68%] pb-[25px] leading-[50px] font-semibold text-[#19082D]"
+        >
+          Woocommerce Ready
+        </h1>
+        <p class="font-poppins text-[16px] text-[#454F71] w-[70%] leading-7">
+          WooCommerce - the most customizable eCommerce platform for building
+          your online business. We used this plugin for ecommerce and included
+          demo. After installing demo data you will get demo shop there.
+        </p>
+      </div>
+      <div class="w-1/2 bg-white h-full">
+        <img
+          class="w-full h-full relative right-[23%] top-[100px]"
+          src="/images/woocommerce.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div
+      class="bg-[url('/images/bg1.jpg')] bg-cover bg-center h-[406px] flex flex-col items-center pt-[90px]"
+    >
+      <p
+        class="rounded-3xl font-poppins text-xs w-[110px] font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
+      >
+        PLUGGINS
+      </p>
+      <h1
+        class="font-jost text-[40px] w-[40%] text-center pb-14 leading-[50px] font-semibold text-white"
+      >
+        Used Popular Premium and Compatible Plugins
+      </h1>
+    </div>
+    <div class="px-[174px] bg-transparent relative top-[-100px]">
+      <div
+        class="swiper mySwiper border-b-4 border-[#6722B5] h-[213px] bg-white"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide border-r-2">
+            <div class="flex flex-col items-center py-16 px-8">
+              <img src="/images/2 (1).png" alt="" />
+              <p
+                class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
+              >
+                WooCommerce
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide border-r-2">
+            <div class="flex flex-col items-center py-16 px-8">
+              <img src="/images/3 (1).png" alt="" />
+              <p
+                class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
+              >
+                WooCommerce
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide border-r-2">
+            <div class="flex flex-col items-center py-16 px-8">
+              <img src="/images/4 (1).png" alt="" />
+              <p
+                class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
+              >
+                WooCommerce
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide border-r-2">
+            <div class="flex flex-col items-center py-16 px-8">
+              <img src="/images/5 (1).png" alt="" />
+              <p
+                class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
+              >
+                WooCommerce
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide border-r-2">
+            <div class="flex flex-col items-center py-16 px-8">
+              <img src="/images/6 (1).png" alt="" />
+              <p
+                class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
+              >
+                WooCommerce
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide border-r-2">
+            <div class="flex flex-col items-center py-16 px-8">
+              <img src="/images/7.png" alt="" />
+              <p
+                class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
+              >
+                WooCommerce
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide border-r-2">
+            <div class="flex flex-col items-center py-16 px-8">
+              <img src="/images/8.png" alt="" />
+              <p
+                class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
+              >
+                WooCommerce
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide border-r-2">
+            <div class="flex flex-col items-center py-16 px-8">
+              <img src="/images/1 (1).png" alt="" />
+              <p
+                class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
+              >
+                WooCommerce
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination hidden"></div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <p
+        class="rounded-3xl font-poppins text-xs w-[172px] font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
+      >
+        CORE FEATURES
+      </p>
+      <h1
+        class="font-jost text-[40px] w-[34%] text-center pb-14 leading-[50px] font-semibold text-[#19082D]"
+      >
+        Constantly Update With New Features.
+      </h1>
+      <div class="grid grid-cols-4 px-44 gap-[30px] pb-[95px]">
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/1-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/2-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/3-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/4-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/5-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/6-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/7-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/8-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/9-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/10-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/11-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/12-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/13-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/14-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/15-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+        <div
+          class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
+        >
+          <div class="flex flex-col items-center">
+            <img class="w-[36%]" src="/images/16-pic.png" alt="" />
+            <p
+              class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
+            >
+              15 Demo HomePage
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="bg-[url('/images/footer-bg.jpg')] bg-center bg-cover h-[432px] flex flex-col items-center py-[100px]"
+    >
+      <p
+        class="rounded-3xl font-poppins text-xs w-[140px] font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-[8px]"
+      >
+        STAY RELAX
+      </p>
+      <h1
+        class="font-jost text-[42px] w-[47%] text-center pb-[33px] leading-[55px] font-normal text-white"
+      >
+        Start Your Upcoming Modern
+        <span class="font-bold text-[#FF7425]">Creative Agency</span> Website
+        With
+        <span class="font-bold text-[#FF7425]">Swipy</span>
+      </h1>
+      <div class="font-poppins text-[15px] font-medium flex gap-6 items-center">
+        <a class="text-white px-8 py-[14px] bg-[#6722B5] rounded-lg" href=""
+          >PREVIEW DEMOS</a
+        >
+        <a class="text-[#1E1D2F] px-8 py-3 bg-white rounded-lg" href=""
+          >BUY NOW FOR ONLY
+          <span class="text-[20px] font-bold text-[#FF7425]">$59</span></a
+        >
+      </div>
+    </footer>
+    <div class="bg-[#6722B5] h-[76px] flex items-center justify-center">
+      <p class="font-poppins text-white">
+        © 2022 Swipy, All Rights Reserved. Developed By
+        <span class="hover:underline text-[#FF7425] hover:cursor-pointer"
+          >RSTheme</span
+        >
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true, // default
+      });
+      wow.init();
+    </script>
+  </body>
+</html>

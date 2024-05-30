@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Hover Effect with Tailwind CSS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .parallax-container {
+        perspective: 1000px;
+      }
+      .parallax-image {
+        transition: transform 0.1s ease;
+      }
+    </style>
+  </head>
+  <body
+    class="parallax-container bg-gray-100 flex items-center justify-center h-screen"
+  >
+    <div class="w-96 h-96 overflow-hidden relative">
+      <img
+        src="/images/bnr-ly1.png"
+        alt="Parallax Image"
+        class="parallax-image w-full h-full object-cover"
+      />
+    </div>
+
+    <script>
+      document
+        .querySelector(".parallax-container")
+        .addEventListener("mousemove", function (e) {
+          const image = document.querySelector(".parallax-image");
+          const container = e.currentTarget.getBoundingClientRect();
+          const x = (e.clientX - container.left) / container.width;
+          const y = (e.clientY - container.top) / container.height;
+          const moveX = (x - 0.5) * 30; // Adjust the intensity of the effect
+          const moveY = (y - 0.5) * 30;
+          image.style.transform = `translate(${moveX}px, ${moveY}px)`; // Adjust the scale if needed
+        });
+
+      document
+        .querySelector(".parallax-container")
+        .addEventListener("mouseleave", function () {
+          const image = document.querySelector(".parallax-image");
+          image.style.transform = "translate(0px, 0px) scale(1)";
+        });
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Hover Effect with Tailwind CSS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .parallax-container {
+        perspective: 1000px;
+      }
+      .parallax-image {
+        transition: transform 0.5s ease; /* Smooth transition for the transform property */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="parallax-container w-96 h-96 overflow-hidden relative">
+      <img
+        src="your-image-url-1.jpg"
+        alt="Parallax Image 1"
+        class="parallax-image w-full h-full object-cover absolute top-0 left-0"
+      />
+      <img
+        src="your-image-url-2.jpg"
+        alt="Parallax Image 2"
+        class="parallax-image w-full h-full object-cover absolute top-0 left-0"
+      />
+      <img
+        src="your-image-url-3.jpg"
+        alt="Parallax Image 3"
+        class="parallax-image w-full h-full object-cover absolute top-0 left-0"
+      />
+      <!-- Add more images as needed -->
+    </div>
+
+    <script>
+      const container = document.querySelector(".parallax-container");
+      const images = document.querySelectorAll(".parallax-image");
+
+      container.addEventListener("mousemove", function (e) {
+        const rect = container.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width;
+        const y = (e.clientY - rect.top) / rect.height;
+        const moveX = (x - 0.5) * 30; // Adjust the intensity of the effect
+        const moveY = (y - 0.5) * 30;
+
+        images.forEach((image) => {
+          image.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.1)`; // Adjust the scale if needed
+        });
+      });
+
+      container.addEventListener("mouseleave", function () {
+        images.forEach((image) => {
+          image.style.transform = "translate(0px, 0px) scale(1)";
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="navbar fixed top-0 left-0 right-0 opacity-0 visibility-hidden transition-opacity duration-500 ease-in-out">
+    <!-- Navbar content here -->
+  </div>
+
+  <script>
+    const newNav = () => {
+      let navigation = document.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          navigation.style.opacity = "1";
+          navigation.style.visibility = "visible";
+        } else {
+          navigation.style.opacity = "0";
+          navigation.style.visibility = "hidden";
+        }
+      });
+    }
+
+    newNav();
+  </script>
+
+</body>
+</html>
