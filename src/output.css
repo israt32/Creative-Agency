@@ -1083,6 +1083,14 @@ video {
   background-image: url('/images/footer-bg.jpg');
 }
 
+.bg-\[url\(\/images\/banner\.jpg\)\] {
+  background-image: url(/images/banner.jpg);
+}
+
+.bg-\[url\(\.\.\/images\/banner\.jpg\)\] {
+  background-image: url(../images/banner.jpg);
+}
+
 .bg-cover {
   background-size: cover;
 }
