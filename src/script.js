@@ -33,10 +33,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
-
-
-
 const newNav = () => {
   let navigation = document.querySelector('.navbar');
   window.addEventListener('scroll', () => {
@@ -51,8 +47,6 @@ const newNav = () => {
 }
 
 newNav();
-
-
 
 
 // image
@@ -130,7 +124,6 @@ document
 
 
 
-
 //imageThree
 document
 .querySelector(".parallax-container")
@@ -153,151 +146,6 @@ document
   const moveY = (y - 0.1) * 10;
   image.style.transform = "translate(0px, 0px)";
 });
-
-
-
-
-
-
-// navbar
-
-
-// const newNav = () =>{
-//   let navigation = document.querySelector('.navbar');
-//   window.addEventListener('scroll',() => {
-//     if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-//       navigation.style.position = "fixed";
-//       navigation.style.backgroundColor = "black";
-//       navigation.style.transform = "translateY(-2%)";
-//       navigation.style.transition = "1s";
-//       navigation.style.visibility = "visible";
-//       // navigation.style.animation = "headerSticky 1s forwards"; // Adding animation
-//     } else {
-//       navigation.style.position = "absolute";
-//       navigation.style.top = "0";
-//       navigation.style.backgroundColor = "transparent";
-//       navigation.style.transition = "1s";
-//       navigation.style.transform = "translateY(0%)";
-//       // navigation.style.animation = "none"; // Removing animation
-//     }
-//   });
-// }
-
-// newNav();
-
-
-// const newNav = () => {
-//   let navigation = document.querySelector('.navbar');
-//   window.addEventListener('scroll', () => {
-//       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//           navigation.classList.remove('hidden-nav');
-//           navigation.classList.add('visible-nav');
-//       } else {    
-//           navigation.classList.remove('visible-nav');
-//           navigation.classList.add('hidden-nav');
-//       }
-//   });
-// }
-
-// newNav();
-
-
-// //////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-// const newNav = () => {
-//   let navigation = document.querySelector('.navbar');
-//   window.addEventListener('scroll', () => {
-//       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//         navigation.style.opacity = "1";
-//         navigation.style.visibility = "visible";
-//       } else {
-//         navigation.style.opacity = "0";
-//         navigation.style.visibility = "hidden";
-
-//       }
-//   });
-// }
-
-// newNav();
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const container = document.querySelector(".parallax-container");
-// const images = document.querySelectorAll(".parallax-image");
-
-// container.addEventListener("mousemove", function (e) {
-//   const rect = container.getBoundingClientRect();
-//   const x = (e.clientX - rect.left) / rect.width;
-//   const y = (e.clientY - rect.top) / rect.height;
-//   const moveX = ( 0.1 - x) * 30; // Adjust the intensity of the effect
-//   const moveY = ( 0.1 - y) * 30;
-
-//   images.forEach((image) => {
-//     image.style.transform = `translate(${moveX}px, ${moveY}px)`; // Adjust the scale if needed
-//   });
-// });
-
-// container.addEventListener("mouseleave", function () {
-//   images.forEach((image) => {
-//     const moveX = (x - 0.1) * 10; // Adjust the intensity of the effect
-//     const moveY = (y - 0.1) * 10;
-//     image.style.transform = "translate(0px, 0px)";
-//   });
-// });
-
-
-
-
-
-
-
-
-
-
-//counter js
-// $(document).ready(function() {
-
-//   var counters = $(".count");
-//   var countersQuantity = counters.length;
-//   var counter = [];
-
-//   for (i = 0; i < countersQuantity; i++) {
-//     counter[i] = parseInt(counters[i].innerHTML);
-//   }
-
-//   var count = function(start, value, id) {
-//     var localStart = start;
-//     setInterval(function() {
-//       if (localStart < value) {
-//         localStart++;
-//         counters[id].innerHTML = localStart;
-//       }
-//     }, 100);
-//   }
-
-//   for (j = 0; j < countersQuantity; j++) {
-//     count(0, counter[j], j);
-//   }
-// });
-
 
 
 //counter js
