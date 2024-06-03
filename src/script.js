@@ -1,3 +1,60 @@
+// swiper js
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 5,
+  spaceBetween: 0,
+  loop: Infinity,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+ 
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+  },
+});
+
+
+
+
+
+const newNav = () => {
+  let navigation = document.querySelector('.navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navigation.classList.remove('opacity-0', 'visibility-hidden');
+      navigation.classList.add('opacity-100', 'visibility-visible');
+    } else {
+      navigation.classList.remove('opacity-100', 'visibility-visible');
+      navigation.classList.add('opacity-0', 'visibility-hidden');
+    }
+  });
+}
+
+newNav();
+
+
+
+
 // image
 document
 .querySelector(".parallax-container")
@@ -171,20 +228,6 @@ document
 
 
 
-const newNav = () => {
-  let navigation = document.querySelector('.navbar');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navigation.classList.remove('opacity-0', 'visibility-hidden');
-      navigation.classList.add('opacity-100', 'visibility-visible');
-    } else {
-      navigation.classList.remove('opacity-100', 'visibility-visible');
-      navigation.classList.add('opacity-0', 'visibility-hidden');
-    }
-  });
-}
-
-newNav();
 
 
 
@@ -298,12 +341,3 @@ $(document).ready(function() {
   }
 });
 
-// swiper js
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 5,
-  spaceBetween: 0,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});

@@ -26,13 +26,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!--  // wow js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <style>
       .visibility-hidden {
@@ -41,6 +41,12 @@
       .visibility-visible {
         visibility: visible;
       }
+      /* .swiper-button-next{
+        display: none;
+      }
+      .swiper-button-prev{
+        display: none;
+      } */
     </style>
   </head>
   <body class="pt-[54px]">
@@ -49,19 +55,19 @@
     >
       <div class="w-[152px] pt-[17px]">
         <img
-          src="../images/envato_market-dde916a48af7413e54aa058fe7ae6856752fca799da4bec355f00aea904bfa19.png"
+          src="assets/image/envato_market-dde916a48af7413e54aa058fe7ae6856752fca799da4bec355f00aea904bfa19.png"
           alt=""
         />
       </div>
       <a
-        class="text-sm font-poppins bg-[#7AA93C] text-white w-24 h-8 mt-3 flex justify-center items-center rounded-sm"
+        class="text-sm font-poppins bg-[#7AA93C] text-white w-24 h-8 mt-3 flex justify-center items-center rounded-md"
         href=""
         >Buy now</a
       >
     </div>
 
     <nav
-      class="navbar fixed top-[54px] w-full z-20 bg-white navbar opacity-0 visibility-hidden shadow-[0_0_20px_-10px_rgba(0,0,0,0.8)]"
+      class="navbar fixed top-[54px] w-full z-20 bg-white navbar opacity-0 visibility-hidden shadow-[0_0_20px_-10px_rgba(0,0,0,0.8)] hidden lg:block"
     >
       <ul
         class="flex justify-center gap-[42px] font-jost font-medium text-sm h-[72px] items-center"
@@ -90,81 +96,142 @@
     </nav>
     <!-- parallex-banner -->
     <div
-      class="bg-[url(../images/banner.jpg)] bg-center bg-cover h-screen w-full parallax-container relative"
+      class="bg-[url(assets/image/banner.jpg)] bg-center bg-cover lg:h-screen md:h-[67vh] h-[46vh] w-full parallax-container relative overflow-x-clip"
     >
+      <!-- ////// -->
+      <div
+        class="flex flex-col bg-white w-10 h-[116px] gap-4 py-4 px-3 rounded-l-lg fixed top-[40%] right-0 md:top-[30%] z-50 shadow-[0_3px_15px_rgba(0,0,0,0.1)]"
+      >
+        <i
+          class="fa-regular fa-futbol duration-500 hover:text-[#6722B5] hover:cursor-pointer group"
+        >
+          <div
+            class="bg-[#262626] absolute left-[-130px] top-[7px] hidden group-hover:block"
+          >
+            <p
+              class="font-poppins font-normal text-[13px] text-white px-3 py-2"
+            >
+              Submit a ticket
+            </p>
+          </div>
+        </i>
+        <i
+          class="fa-solid fa-cart-shopping duration-500 hover:text-[#6722B5] hover:cursor-pointer group"
+        >
+          <div
+            class="bg-[#262626] absolute left-[-142px] top-[40px] hidden group-hover:block"
+          >
+            <p
+              class="font-poppins font-normal text-[13px] text-white px-3 py-2"
+            >
+              Purchase Theme
+            </p>
+          </div>
+        </i>
+        <i
+          class="fa-solid fa-book duration-500 hover:text-[#6722B5] hover:cursor-pointer group"
+        >
+          <div
+            class="bg-[#262626] absolute left-[-134px] top-[75px] hidden group-hover:block"
+          >
+            <p
+              class="font-poppins font-normal text-[13px] text-white px-3 py-2"
+            >
+              Documentation
+            </p>
+          </div>
+        </i>
+      </div>
+      <!-- ///// -->
       <div class="">
-        <div class="flex justify-[inherit] gap-[55%] pt-[8%] overflow-hidden">
+        <div
+          class="lg:flex justify-[inherit] gap-[55%] pt-[8%] overflow-hidden hidden"
+        >
           <img
             class="parallax-image duration-100 ease-in-out relative right-[18px]"
-            src="../images/bnr-ly1.png"
+            src="assets/image/bnr-ly1.png"
             alt=""
           />
           <img
             class="parallax-imageOne duration-100 ease-in-out"
-            src="../images/bnr-ly2.png"
+            src="assets/image/bnr-ly2.png"
             alt=""
           />
         </div>
-        <div class="flex justify-between pt-[10%] px-[7%]">
+        <div class="lg:flex justify-between pt-[10%] px-[7%] hidden">
           <img
             class="parallax-imageTwo duration-100 ease-in-out"
-            src="../images/bnr-ly3.png"
+            src="assets/image/bnr-ly3.png"
             alt=""
           />
           <img
             class="parallax-imageThree duration-100 ease-in-out"
-            src="../images/bnr-ly4.png"
+            src="assets/image/bnr-ly4.png"
             alt=""
           />
         </div>
       </div>
-      <div class="flex justify-center items-center flex-col text-center">
-        <div class="absolute top-0 w-[54%] pt-[72px]">
-          <img class="mx-auto pb-6" src="../images/logo-light.png" alt="" />
+      <div class="flex justify-center items-center flex-col">
+        <div class="absolute top-0 lg:w-[54%] md:w-[86%] pt-[72px] text-center">
+          <img class="mx-auto pb-6" src="assets/image/logo-light.png" alt="" />
 
           <h1
-            class="leading-[69px] font-jost text-[50px] text-white font-bold tracking-[3px]"
+            class="md:leading-[69px] font-jost lg:text-[50px] text-white font-bold tracking-[3px] md:text-[35px] md:pb-[14px] text-xl leading-10"
           >
             Creative Agency
           </h1>
           <h1
-            class="font-jost text-[40px] text-white font-bold tracking-[3px] mb-[34px]"
+            class="font-jost lg:text-[40px] md:text-3xl text-white font-bold tracking-[3px] md:mb-8"
           >
             WordPress Theme
           </h1>
-          <a
-            class="bg-[#6722B5] text-white py-4 rounded-lg px-[30px] font-poppins text-[15px] font-medium"
-            href=""
+          <div
+            class="md:flex md:justify-end items-center gap-[90px] relative w-[406px] mx-auto pt-[26px] md:p-0"
           >
-            <i class="fa-solid fa-feather text-xl pr-2"></i>
-            PURCHASE NOW</a
-          >
-          <img class="pl-[52%]" src="../images/arrow.png" alt="" />
-          <p
-            class="text-xl font-bold text-[#FF7425] relative top-[-74px] left-[200px]"
-          >
-            $59 Only
-          </p>
-          <img src="../images/device.png" alt="" />
+            <a
+              class="bg-[#6722B5] text-white md:py-[14px] rounded-lg md:px-[30px] py-[10px] px-4 font-poppins text-[15px] font-medium"
+              href=""
+            >
+              <i class="fa-solid fa-feather text-xl pr-2"></i>
+              PURCHASE NOW</a
+            >
+            <img
+              class="w-[195px] absolute -bottom-12 md:block hidden"
+              src="assets/image/arrow.png"
+              alt=""
+            />
+            <p
+              class="font-poppins text-xl font-bold text-[#FF7425] mr-[-66px] md:block hidden"
+            >
+              $59 <span class="md:text-sm md:font-semibold">Only</span>
+            </p>
+          </div>
+          <img
+            class="md:pt-[104px] lg:pt-32 md:block hidden"
+            src="assets/image/device.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
-    <div class="bg-[#6722B5] px-28 pt-[220px] pb-[110px]">
+    <div
+      class="bg-[#6722B5] lg:px-28 md:pt-[220px] pb-[80px] md:pb-[110px] md:px-10 pt-[80px] px-4"
+    >
       <div class="flex flex-col items-center">
         <p
-          class="rounded-3xl font-poppins text-xs font-medium tracking-[3px] py-2 px-5 text-[#6722B5] bg-white mb-4"
+          class="rounded-3xl font-poppins md:text-xs text-[13px] font-medium md:tracking-[3px] py-2 px-5 text-[#6722B5] bg-white mb-4"
         >
           WHY BUY SWIPY?
         </p>
         <h1
-          class="font-jost text-white text-[40px] font-semibold w-[55%] text-center leading-[50px] pb-[70px]"
+          class="font-jost text-white md:text-[40px] text-[19px] font-semibold lg:w-[55%] md:w-[97%] text-center md:leading-[50px] pb-11 md:pb-[70px]"
         >
           21000+ Customers Using Our Products
         </h1>
       </div>
-      <div class="grid grid-cols-4 gap-[30px] justify-items-center">
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-[30px]">
         <div class="">
-          <img src="../images/1.png" alt="" />
+          <img src="assets/image/1.png" alt="" />
           <div class="bg-white text-center rounded-bl-lg">
             <div class="pt-7 px-[33px] pb-5">
               <h1
@@ -182,7 +249,7 @@
           </div>
         </div>
         <div class="">
-          <img src="../images/1.png" alt="" />
+          <img src="assets/image/2.png" alt="" />
           <div class="bg-white text-center rounded-bl-lg">
             <div class="pt-7 px-[33px] pb-5">
               <h1
@@ -191,7 +258,7 @@
                 Elementor Page Builder
               </h1>
               <p class="font-poppins text-[#454F6C] leading-7">
-                We used #1 drag and drop page builder as Elementor page builder.
+                Anyone can create a page without any coding knowledge.
               </p>
             </div>
             <div class="flex justify-end">
@@ -200,7 +267,7 @@
           </div>
         </div>
         <div class="">
-          <img src="../images/1.png" alt="" />
+          <img src="assets/image/3.png" alt="" />
           <div class="bg-white text-center rounded-bl-lg">
             <div class="pt-7 px-[33px] pb-5">
               <h1
@@ -209,7 +276,7 @@
                 Elementor Page Builder
               </h1>
               <p class="font-poppins text-[#454F6C] leading-7">
-                We used #1 drag and drop page builder as Elementor page builder.
+                Only single click you will get to install demo data easily.
               </p>
             </div>
             <div class="flex justify-end">
@@ -218,7 +285,7 @@
           </div>
         </div>
         <div class="">
-          <img src="../images/1.png" alt="" />
+          <img src="assets/image/4.png" alt="" />
           <div class="bg-white text-center rounded-bl-lg">
             <div class="pt-7 px-[33px] pb-5">
               <h1
@@ -227,7 +294,7 @@
                 Elementor Page Builder
               </h1>
               <p class="font-poppins text-[#454F6C] leading-7">
-                We used #1 drag and drop page builder as Elementor page builder.
+                You can change your color scheme from theme options.
               </p>
             </div>
             <div class="flex justify-end">
@@ -236,8 +303,8 @@
           </div>
         </div>
 
-        <div class="">
-          <img src="../images/1.png" alt="" />
+        <div class="lg:col-end-3">
+          <img src="assets/image/5.png" alt="" />
           <div class="bg-white text-center rounded-bl-lg">
             <div class="pt-7 px-[33px] pb-5">
               <h1
@@ -246,7 +313,7 @@
                 Elementor Page Builder
               </h1>
               <p class="font-poppins text-[#454F6C] leading-7">
-                We used #1 drag and drop page builder as Elementor page builder.
+                This theme includes premium WordPress plugins.
               </p>
             </div>
             <div class="flex justify-end">
@@ -255,7 +322,7 @@
           </div>
         </div>
         <div class="">
-          <img src="../images/1.png" alt="" />
+          <img src="assets/image/6.png" alt="" />
           <div class="bg-white text-center rounded-bl-lg">
             <div class="pt-7 px-[33px] pb-5">
               <h1
@@ -264,7 +331,7 @@
                 Elementor Page Builder
               </h1>
               <p class="font-poppins text-[#454F6C] leading-7">
-                We used #1 drag and drop page builder as Elementor page builder.
+                Woocommerce ready - you can sell your products easily.
               </p>
             </div>
             <div class="flex justify-end">
@@ -274,102 +341,172 @@
         </div>
       </div>
     </div>
-    <div class="pt-[90px] px-[100px] pb-[100px] flex flex-col items-center">
+    <div
+      class="md:pt-[90px] lg:px-[100px] pb-[100px] pt-[70px] flex flex-col items-center overflow-hidden md:px-[60px] px-4"
+    >
       <p
-        class="rounded-3xl font-poppins text-xs font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
+        class="rounded-3xl font-poppins md:text-xs text-[13px] font-medium md:tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-[15px] md:mb-5"
       >
         DEMO HOME PAGES
       </p>
       <h1
-        class="font-jost text-[40px] w-[47%] pb-16 text-center leading-[50px] font-semibold text-[#19082D]"
+        class="font-jost md:text-[40px] text-[19px] lg:w-[47%] md:w-[90%] w-[76%] md:pb-16 pb-10 text-center md:leading-[50px] font-semibold text-[#19082D]"
       >
         <span class="text-[#6722B5]">15</span> Unique Demo Home Pages With
         Awesome Layouts
       </h1>
       <!-- wow js animation -->
-      <div class="grid grid-cols-3 gap-[50px]">
-        <div class="wow fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home1.jpg" alt="" />
+      <div
+        class="grid lg:grid-cols-3 lg:gap-[50px] md:gap-[30px] md:grid-cols-2 gap-y-7"
+      >
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home1.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Digital Agency
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home2.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home2.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Personal Portfolio
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home3.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home3.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Branding Agency
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home4.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home4.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Creative Agency
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home5.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home5.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Corporate Agency
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home6.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home6.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Minimal Agency
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home7.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home7.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Creative Agency 2
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home8.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home8.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Creative Agency 3
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home9.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home9.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Creative Agency 4
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home10.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home10.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Creative Agency 5
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home11.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home11.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
@@ -377,32 +514,56 @@
           </p>
         </div>
 
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home12.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home12.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Creative Portfolio
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home13.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home13.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Branding
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home14.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home14.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
             Minimal Portfolio
           </p>
         </div>
-        <div class="shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]">
-          <img src="../images/home15.jpg" alt="" />
+        <div
+          class="wow animate__animated animate__fadeInUp shadow-[3px_5px_25px_0_rgba(0,0,0,0.1)]"
+        >
+          <img
+            class="hover:cursor-pointer"
+            src="assets/image/home15.jpg"
+            alt=""
+          />
           <p
             class="font-jost h-[90px] flex justify-center items-center text-xl font-semibold text-[#19082D] bg-[#F7F9FA]"
           >
@@ -412,12 +573,16 @@
       </div>
     </div>
     <div
-      class="px-[234px] h-[302px] bg-[url('../images/bg1.jpg')] bg-center bg-cover font-jost"
+      class="lg:px-[234px] bg-[url('assets/image/bg1.jpg')] bg-center bg-cover font-jost md:grid md:place-content-center"
     >
-      <div class="grid grid-cols-4 gap-[168px] py-[110px]">
-        <div class="flex flex-col items-center">
-          <div class="flex pb-3">
-            <div class="count text-6xl font-bold text-[#FF7425]">15</div>
+      <div
+        class="grid lg:grid-cols-4 lg:gap-[168px] lg:py-[110px] grid-cols-2 py-16 md:gap-x-[180px] md:gap-y-11 gap-x-8 gap-y-8"
+      >
+        <div class="text-center">
+          <div
+            class="count md:text-6xl font-bold text-[#FF7425] pb-3 text-[50px]"
+          >
+            15
           </div>
           <p
             class="counter-pera2 text-[18px] font-semibold text-white w-[114%]"
@@ -426,59 +591,61 @@
           </p>
         </div>
 
-        <div>
-          <div class="flex pb-3">
-            <div class="count text-6xl font-bold text-[#FF7425]">70</div>
-            <p class="counter-pera text-6xl font-bold text-[#FF7425]">+</p>
+        <div class="text-center">
+          <div
+            class="count md:text-6xl text-[50px] font-bold text-[#FF7425] after:content-['+'] pb-3"
+          >
+            70
           </div>
-          <p class="counter-pera2 text-[18px] font-semibold text-white">
-            Total Pages
-          </p>
+
+          <p class="text-[18px] font-semibold text-white">Total Pages</p>
         </div>
 
-        <div>
-          <div class="flex pb-3">
-            <div class="count text-6xl font-bold text-[#FF7425]">0</div>
-            <div id="counter" class="count text-6xl font-bold text-[#FF7425]">
-              7
-            </div>
+        <div class="text-center">
+          <div
+            class="count md:text-6xl text-[50px] font-bold text-[#FF7425] before:content-['0'] pb-3"
+          >
+            7
           </div>
-          <p class="counter-pera2 text-[18px] font-semibold text-white">
-            Header Style
-          </p>
+
+          <p class="text-[18px] font-semibold text-white">Header Style</p>
         </div>
 
-        <div>
-          <div class="flex pb-3">
-            <div class="count text-6xl font-bold text-[#FF7425]">96</div>
-            <p class="counter-pera text-6xl font-bold text-[#FF7425]">+</p>
+        <div class="text-center">
+          <div
+            class="count md:text-6xl text-[50px] font-bold text-[#FF7425] after:content-['+'] pb-3"
+          >
+            96
           </div>
-          <p class="counter-pera2 text-[18px] font-semibold text-white">
-            Custom Addons
-          </p>
+
+          <p class="text-[18px] font-semibold text-white">Custom Addons</p>
         </div>
       </div>
     </div>
-    <div class="flex">
-      <div class="w-1/2 bg-white h-full">
+    <div class="flex flex-col lg:flex-row py-16 px-5 md:py-0 md:px-0">
+      <div class="lg:w-1/2 bg-white h-full md:w-full">
         <img
-          class="w-full h-full relative left-[23%] top-[100px]"
-          src="../images/elementor.png"
+          class="w-full h-full relative lg:left-[23%] lg:top-[100px] md:pt-[75px] md:left-0 md:px-[60px] lg:px-0 lg:pt-0 pb-8 md:pb-0"
+          src="assets/image/elementor.png"
           alt=""
         />
       </div>
-      <div class="w-1/2 bg-[#F7F9FA] py-[190px] pl-[192px] text-left">
+      <div
+        class="lg:w-1/2 md:w-full lg:bg-[#F7F9FA] md:bg-white lg:py-[190px] lg:pl-[192px] lg:pr-0 md:px-11 md:py-6 md:text-left text-center"
+      >
         <p
-          class="rounded-3xl font-poppins text-xs w-[157px] font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
+          class="rounded-3xl font-poppins md:text-xs text-[13px] md:w-[157px] w-[128px] font-medium md:tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-[5px] md:mb-5 m-auto md:m-0"
         >
           PAGE BUILDER
         </p>
         <h1
-          class="font-jost text-[40px] w-[55%] pb-[25px] leading-[50px] font-semibold text-[#19082D]"
+          class="font-jost md:text-[40px] text-[19px] lg:w-[55%] md:w-full pb-[25px] leading-[50px] font-semibold text-[#19082D]"
         >
           Elementor Page Builder
         </h1>
-        <p class="font-poppins text-[16px] text-[#6A6B6B] w-3/4 leading-7">
+        <p
+          class="font-poppins text-[16px] text-[#6A6B6B] lg:w-3/4 md:w-[98%] leading-7 md:pb-9 lg:pb-0"
+        >
           We used #1 free WordPress website builder(Drag & Drop) - Elementor as
           page builder. This page builder is Simple. Powerful. Flexible.
           Experience the power of 100% visual design and build websites that
@@ -487,19 +654,19 @@
       </div>
     </div>
     <div
-      class="bg-[url(../images/bg2.jpg)] flex flex-col items-center pt-[92px] px-[174px] pb-[100px]"
+      class="bg-[url(assets/image/bg2.jpg)] flex flex-col items-center pt-[74px] md:pt-[92px] lg:px-[174px] md:px-14 pb-[100px] px-4"
     >
       <p
-        class="rounded-3xl font-poppins text-xs w-[157px] font-medium tracking-[3px] py-2 px-5 text-[#6722B5] bg-white mb-5"
+        class="rounded-3xl font-poppins text-xs md:w-[161px] w-32 font-medium md:tracking-[3px] py-2 px-5 text-[#6722B5] bg-white mb-5"
       >
-        PAGE BUILDER
+        700+ REVIEWS
       </p>
       <h1
-        class="font-jost text-[40px] w-1/2 text-center pb-[25px] leading-[50px] font-semibold text-white"
+        class="font-jost md:text-[40px] text-[19px] lg:w-1/2 w-[67%] text-center lg:pb-[25px] pb-[50px] md:leading-[50px] font-semibold text-white"
       >
         Testimonials From Real Customers
       </h1>
-      <div class="grid grid-cols-3 gap-[30px]">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
         <div class="bg-[#5C1EA3] py-[50px] px-8 rounded-lg">
           <p
             class="font-poppins text-[16px] italic text-[#FFFFFF] leading-7 pb-6"
@@ -511,7 +678,7 @@
           <p class="font-jost text-white font-semibold text-[18px] pb-5">
             OnlyGains2021
           </p>
-          <div class="flex text-[#FFFF00] pb-6 gap-2">
+          <div class="flex text-[#FFFF00] lg:pb-6 gap-2">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -530,7 +697,7 @@
           <p class="font-jost text-white font-semibold text-[18px] pb-5">
             fabrizioDot
           </p>
-          <div class="flex text-[#FFFF00] pb-6 gap-2">
+          <div class="flex text-[#FFFF00] lg:pb-6 gap-2">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -549,7 +716,7 @@
           <p class="font-jost text-white font-semibold text-[18px] pb-5">
             Dienbos
           </p>
-          <div class="flex text-[#FFFF00] pb-6 gap-2">
+          <div class="flex text-[#FFFF00] lg:pb-6 gap-2 pb-11">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -558,54 +725,64 @@
         </div>
       </div>
     </div>
-    <div class="flex">
-      <div class="w-1/2 bg-[#F7F9FA] py-[185px] pl-40 text-left">
+    <div
+      class="flex flex-col lg:flex-row py-9 px-5 md:py-0 md:px-0 bg-[#F7F9FA] md:bg-none"
+    >
+      <div
+        class="lg:w-1/2 bg-[#F7F9FA] lg:py-[185px] lg:pl-40 md:pl-[50px] md:text-left text-center order-2 lg:order-1 w-full"
+      >
         <p
-          class="rounded-3xl font-poppins text-xs w-[157px] font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
+          class="rounded-3xl font-poppins text-xs md:w-[157px] w-[124px] md:m-0 m-auto font-medium md:tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
         >
           E-COMMERCE
         </p>
         <h1
-          class="font-jost text-[40px] w-[68%] pb-[25px] leading-[50px] font-semibold text-[#19082D]"
+          class="font-jost md:text-[40px] text-[19px] md:w-[68%] pb-[25px] md:leading-[50px] font-semibold text-[#19082D]"
         >
           Woocommerce Ready
         </h1>
-        <p class="font-poppins text-[16px] text-[#454F71] w-[70%] leading-7">
+        <p
+          class="font-poppins text-[16px] text-[#454F71] lg:w-[70%] md:w-full md:pb-[60px] pb-7 leading-7"
+        >
           WooCommerce - the most customizable eCommerce platform for building
           your online business. We used this plugin for ecommerce and included
           demo. After installing demo data you will get demo shop there.
         </p>
       </div>
-      <div class="w-1/2 bg-white h-full">
+      <div
+        class="lg:w-1/2 lg:bg-white md:bg-[#F7F9FA] h-full md:w-full order-1 lg:order-2"
+      >
         <img
-          class="w-full h-full relative right-[23%] top-[100px]"
-          src="../images/woocommerce.png"
+          class="w-full h-full relative lg:right-[23%] lg:top-[100px] md:p-14 lg:p-0 pb-7 md:pb-0"
+          src="assets/image/woocommerce.png"
           alt=""
         />
       </div>
     </div>
     <div
-      class="bg-[url(../images/bg1.jpg)] bg-cover bg-center h-[406px] flex flex-col items-center pt-[90px]"
+      class="bg-[url(assets/image/bg1.jpg)] bg-cover bg-center flex flex-col items-center lg:pt-[90px] pt-[60px]"
     >
       <p
-        class="rounded-3xl font-poppins text-xs w-[110px] font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
+        class="rounded-3xl font-poppins md:text-xs text-[13px] font-medium md:tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
       >
         PLUGGINS
       </p>
       <h1
-        class="font-jost text-[40px] w-[40%] text-center pb-14 leading-[50px] font-semibold text-white"
+        class="font-jost md:text-[40px] text-[19px] lg:w-[40%] w-[67%] text-center pb-[160px] md:leading-[50px] font-semibold text-white"
       >
         Used Popular Premium and Compatible Plugins
       </h1>
     </div>
-    <div class="px-[174px] bg-transparent relative top-[-100px]">
+    <div
+      class="lg:px-[174px] md:px-[60px] bg-transparent relative top-[-100px] px-4"
+    >
       <div
         class="swiper mySwiper border-b-4 border-[#6722B5] h-[213px] bg-white"
       >
         <div class="swiper-wrapper">
           <div class="swiper-slide border-r-2">
             <div class="flex flex-col items-center py-16 px-8">
-              <img src="../images/2 (1).png" alt="" />
+              <img src="assets/image/2 (1).png" alt="" />
               <p
                 class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
               >
@@ -615,7 +792,7 @@
           </div>
           <div class="swiper-slide border-r-2">
             <div class="flex flex-col items-center py-16 px-8">
-              <img src="../images/3 (1).png" alt="" />
+              <img src="assets/image/3 (1).png" alt="" />
               <p
                 class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
               >
@@ -625,7 +802,7 @@
           </div>
           <div class="swiper-slide border-r-2">
             <div class="flex flex-col items-center py-16 px-8">
-              <img src="../images/4 (1).png" alt="" />
+              <img src="assets/image/4 (1).png" alt="" />
               <p
                 class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
               >
@@ -635,7 +812,7 @@
           </div>
           <div class="swiper-slide border-r-2">
             <div class="flex flex-col items-center py-16 px-8">
-              <img src="../images/5 (1).png" alt="" />
+              <img src="assets/image/5 (1).png" alt="" />
               <p
                 class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
               >
@@ -645,7 +822,7 @@
           </div>
           <div class="swiper-slide border-r-2">
             <div class="flex flex-col items-center py-16 px-8">
-              <img src="../images/6 (1).png" alt="" />
+              <img src="assets/image/6 (1).png" alt="" />
               <p
                 class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
               >
@@ -655,7 +832,7 @@
           </div>
           <div class="swiper-slide border-r-2">
             <div class="flex flex-col items-center py-16 px-8">
-              <img src="../images/7.png" alt="" />
+              <img src="assets/image/7.png" alt="" />
               <p
                 class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
               >
@@ -665,7 +842,7 @@
           </div>
           <div class="swiper-slide border-r-2">
             <div class="flex flex-col items-center py-16 px-8">
-              <img src="../images/8.png" alt="" />
+              <img src="assets/image/8.png" alt="" />
               <p
                 class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
               >
@@ -675,7 +852,7 @@
           </div>
           <div class="swiper-slide border-r-2">
             <div class="flex flex-col items-center py-16 px-8">
-              <img src="../images/1 (1).png" alt="" />
+              <img src="assets/image/1 (1).png" alt="" />
               <p
                 class="font-jost text-[16px] font-semibold text-[#19082D] pt-4"
               >
@@ -686,24 +863,37 @@
         </div>
         <div class="swiper-pagination hidden"></div>
       </div>
+      <div class="swiper-button-next after:hidden">
+        <span
+          class="md:hidden text-[#6722B5] relative top-[130px] right-[140px]"
+          ><i class="fa-solid fa-arrow-right-long"></i
+        ></span>
+      </div>
+      <div class="swiper-button-prev after:hidden">
+        <span class="md:hidden text-[#6722B5] relative top-[130px] left-[140px]"
+          ><i class="fa-solid fa-arrow-left-long"></i
+        ></span>
+      </div>
     </div>
     <div class="flex flex-col items-center">
       <p
-        class="rounded-3xl font-poppins text-xs w-[172px] font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
+        class="rounded-3xl font-poppins md:text-xs text-[13px] font-medium md:tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-5"
       >
         CORE FEATURES
       </p>
       <h1
-        class="font-jost text-[40px] w-[34%] text-center pb-14 leading-[50px] font-semibold text-[#19082D]"
+        class="font-jost md:text-[40px] text-[19px] lg:w-[34%] md:w-[60%] w-[65%] text-center pb-14 md:leading-[50px] font-semibold text-[#19082D]"
       >
         Constantly Update With New Features.
       </h1>
-      <div class="grid grid-cols-4 px-44 gap-[30px] pb-[95px]">
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-2 lg:px-44 md:px-[60px] gap-[30px] pb-[95px] px-4"
+      >
         <div
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/1-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/1-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -715,7 +905,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/2-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/2-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -727,7 +917,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/3-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/3-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -739,7 +929,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/4-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/4-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -751,7 +941,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/5-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/5-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -763,7 +953,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/6-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/6-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -775,7 +965,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/7-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/7-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -787,7 +977,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/8-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/8-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -799,7 +989,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/9-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/9-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -811,7 +1001,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/10-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/10-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -823,7 +1013,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/11-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/11-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -835,7 +1025,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/12-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/12-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -847,7 +1037,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/13-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/13-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -859,7 +1049,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/14-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/14-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -871,7 +1061,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/15-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/15-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -883,7 +1073,7 @@
           class="py-[56px] px-8 shadow-[0_0_50px_0_rgba(0,0,0,0.07)] rounded-3xl"
         >
           <div class="flex flex-col items-center">
-            <img class="w-[36%]" src="../images/16-pic.png" alt="" />
+            <img class="w-[36%]" src="assets/image/16-pic.png" alt="" />
             <p
               class="font-poppins font-semibold text-[18px] text-[#222222] pt-4 tracking-[1px]"
             >
@@ -894,7 +1084,7 @@
       </div>
     </div>
     <footer
-      class="bg-[url(../images/footer-bg.jpg)] bg-center bg-cover h-[432px] flex flex-col items-center py-[100px]"
+      class="bg-[url(assets/image/footer-bg.jpg)] bg-center bg-cover flex flex-col items-center lg:py-[100px] py-[77px]"
     >
       <p
         class="rounded-3xl font-poppins text-xs w-[140px] font-medium tracking-[3px] py-2 px-5 text-white bg-[#6722B5] mb-[8px]"
@@ -902,24 +1092,34 @@
         STAY RELAX
       </p>
       <h1
-        class="font-jost text-[42px] w-[47%] text-center pb-[33px] leading-[55px] font-normal text-white"
+        class="font-jost md:text-[42px] text-[19px] lg:w-[47%] text-center pb-[33px] md:leading-[55px] font-normal text-white"
       >
         Start Your Upcoming Modern
-        <span class="font-bold text-[#FF7425]">Creative Agency</span> Website
-        With
+        <span class="font-bold text-[#FF7425]">
+          <span class="md:block lg:inline-block">Creative</span> Agency</span
+        >
+        Website With
         <span class="font-bold text-[#FF7425]">Swipy</span>
       </h1>
-      <div class="font-poppins text-[15px] font-medium flex gap-6 items-center">
-        <a class="text-white px-8 py-[14px] bg-[#6722B5] rounded-lg" href=""
+      <div
+        class="font-poppins text-[15px] font-medium flex md:flex-row flex-col gap-6 items-center"
+      >
+        <a
+          class="text-white md:px-8 md:py-[14px] px-4 py-[10px] bg-[#6722B5] rounded-lg duration-700 hover:bg-[#FF7425]"
+          href=""
           >PREVIEW DEMOS</a
         >
-        <a class="text-[#1E1D2F] px-8 py-3 bg-white rounded-lg" href=""
+        <a
+          class="text-[#1E1D2F] md:px-8 md:py-3 px-4 py-2 bg-white duration-500 hover:bg-[#6722B5] hover:text-white rounded-lg"
+          href=""
           >BUY NOW FOR ONLY
           <span class="text-[20px] font-bold text-[#FF7425]">$59</span></a
         >
       </div>
     </footer>
-    <div class="bg-[#6722B5] h-[76px] flex items-center justify-center">
+    <div
+      class="bg-[#6722B5] h-[76px] flex items-center justify-center p-[50px] md:p-0 text-center"
+    >
       <p class="font-poppins text-white">
         © 2022 Swipy, All Rights Reserved. Developed By
         <span class="hover:underline text-[#FF7425] hover:cursor-pointer"
@@ -930,14 +1130,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script>
-      wow = new WOW({
-        boxClass: "wow", // default
-        animateClass: "animated", // default
-        offset: 0, // default
-        mobile: true, // default
-        live: true, // default
-      });
-      wow.init();
+      new WOW().init();
     </script>
   </body>
 </html>
